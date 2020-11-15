@@ -28,6 +28,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("io.sentry:sentry-spring-boot-starter:3.1.1")
 }
 
 tasks.withType<Test> {
