@@ -5,10 +5,11 @@ import com.xsc.mundiagua.controller.dto.customer.PhoneUpdateDto
 import com.xsc.mundiagua.model.customer.Customer
 import com.xsc.mundiagua.model.customer.Phone
 import com.xsc.mundiagua.service.CustomerService
+import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping("/v1/customer")
+@RequestMapping(path = ["/v1/customer"], produces = [MediaType.APPLICATION_JSON_VALUE])
 class CustomerControllerV1(val customerService: CustomerService) {
 
     @GetMapping("/{id}")
